@@ -1,0 +1,114 @@
+body {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+  max-width: 400px;
+  display: inline-block;
+  margin: 15px 25px;
+}
+#ca {
+  padding: 10px 6px;
+  border: 1px solid white;
+  display: flex;
+  width: 400px;
+}
+
+#ca:hover {
+  border: 1px solid lightblue;
+  background-color: rgb(228, 249, 255);
+}
+.at {
+  margin-right: 5px;
+}
+.navbar {
+  display: flex;
+  height: 60px;
+  margin-left: -30px;
+  background-color: #f8f9fa;
+  align-items: center;
+}
+.left {
+  display: flex;
+  list-style: none;
+}
+.left li {
+  padding: 0px 5px;
+  margin: 0px 10px;
+}
+.rightnav {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+#btn {
+  background-color: whitesmoke;
+  margin: 0px 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+}
+#btn:hover {
+  background-color: #226ea3;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ab {
+  display: inline-block;
+  margin: 12px 11px;
+  padding: 15px 12px;
+  height: 300px;
+  width: 400px;
+}
+.rightcard {
+  display: flex;
+  flex-direction: column;
+}
+#font {
+  font-weight: bold;
+  font-size: 18px;
+}
+#font:hover {
+  cursor: pointer;
+}
+#fent {
+  color: grey;
+}
+#fent:hover {
+  color: black;
+  cursor: pointer;
+}
+.tempimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.spin::before {
+  animation: 0.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: black;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 16px;
+  right: 115px;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
